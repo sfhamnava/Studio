@@ -80,3 +80,31 @@ nav ul li a:hover{
     line-height: 65px;
 }
 
+.gallery-box{
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+}
+.gallery-box img{
+    width: 90%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+.gallery-box  ul{
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translate(-50%);
+}
+.gallery-box  ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
