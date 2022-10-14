@@ -36,7 +36,7 @@
             </div>
             <div class="col">
                  <div class="gallery-box">
-                     <img src="/img/images (1).jpeg">
+                     <img src="/img/images (1).jpeg" id="gallery">
 
                      <ul>
                          <li class="btn">01</li>
@@ -50,5 +50,35 @@
         <img src="/img/cercle.jpeg" class="small-icon4">
         <img src="/img/squar.png" class="small-icon5">
     </div>
+
+
+     <script>
+         var btn =document.getElementsByClassName("btn");
+         var Gallery = document.getElementById("gallery");
+         
+         // var a = 3;
+         var img = new Array(
+             "/img/images (1).jpeg",
+             "/img/images (2).jpeg",
+             "/img/images (3).jpeg",
+             "/img/images (9).jpeg",
+         );
+
+
+         for(let i=0; i<btn.length; i++){
+             btn [i].onclick = function(){
+                Gallery.src =img[i];
+                let current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active","");
+                this.className += " active";
+                                                             
+             }
+         }
+    
+     </script>
+
+
+
+
 </body>
 </html>
